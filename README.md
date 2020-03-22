@@ -8,8 +8,8 @@ This application is NOT functional because certain props would be required from 
 
 ## Dependencies
 - `axios` - promised based HTTP client for making HTTP requests
-- `bootstrap` - the Bootstrap library
-- `react-helmet` - allows you to dynamically modify HTMl head elements, such as <title></title> and <meta/>
+- `bootstrap` - Bootstrap library
+- `react-helmet` - allows you to dynamically modify HTML head elements, such as <title></title> and <meta>
 - `react-redux` - lets you use React Redux with your React app
 - `react-router-dom` - a collection of navigational components that compose declaratively with your application
 - `reactstrap` - easy to use React Bootstrap 4 components compatible with React 16+
