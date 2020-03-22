@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
 
-import item from "./items";
+import post from "./posts";
 import error from "./errors";
 
-export default combineReducers({ item, error });
+export default combineReducers({ post, error });

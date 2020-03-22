@@ -1,64 +1,64 @@
 import { 
-    ITEMS_LOADING, ITEMS_ERROR,
-    ITEM_CREATED, ITEMS_FETCHED,
-    ITEM_RETURNED, ITEM_UPDATED, ITEM_DELETED
+    POSTS_LOADING, POSTS_ERROR,
+    POST_CREATED, POSTS_FETCHED,
+    POST_RETURNED, POST_UPDATED, POST_DELETED
 } from "../actions/types";
 
 const initialState = {
     loading: false,
-    items: []
+    posts: []
 };
 
 export default (state = initialState, action) => {
     switch(action.type) {
-        case ITEMS_LOADING:
+        case POSTS_LOADING:
             return {
                 ...state,
                 loading: true
             };
-        case ITEMS_ERROR:
+        case POSTS_ERROR:
             return {
                 ...state,
                 loading: false
             };
-        case ITEM_CREATED:
+        case POST_CREATED:
             return {
                 ...state,
                 loading: false,
-                items: [...state.items, action.payload]
+                posts: [...state.posts, action.payload]
             };
-        case ITEMS_FETCHED:
+        case POSTS_FETCHED:
             return {
                 ...state,
                 loading: false,
-                items: action.payload
+                posts: action.payload
             };
-        case ITEM_RETURNED:
+        case POST_RETURNED:
             return {
                 ...state,
                 loading: false,
-                items: state.items.map(item => {
+                posts: state.posts.map(post => {
                     const { _id } = action.payload;
 
-                    if(item._id !== _id) {
-                        return item;
+                    if(post._id !== _id) {
+                        return post;
                     } else return {
-                        item: action.payload
+                        post: action.payload
                     };
                 })
             };
-        case ITEM_UPDATED:
+        case POST_UPDATED:
             return {
                 ...state,
                 loading: false,
-                items: state.items.map(item => {
+                posts: state.posts.map(post => {
                     const { _id, name, description } = action.payload;
                     
-                    if(item._id !== _id) {
-                        return item;
+                    if(post._id !== _id) {
+                        return post;
                     } else return {
-                        ...state.items,
-                        item: {
+                        ...state.posts,
+                        post: {
                             _id,
                             name, 
                             description
@@ -66,11 +66,11 @@ export default (state = initialState, action) => {
                     };
                 })
             };
-        case ITEM_DELETED:
+        case POST_DELETED:
             return {
                 ...state,
                 loading: false,
-                items: state.items.filter(item => item._id !== action.payload)
+                posts: state.posts.filter(post => post._id !== action.payload)
             };
         default: 
             return state;

@@ -1,10 +1,10 @@
 export const ERRORS_RETURNED = "ERRORS_RETURNED";
 export const ERRORS_CLEARED = "ERRORS_CLEARED";
 
-export const ITEMS_LOADING = "ITEMS_LOADING";
-export const ITEMS_ERROR = "ITEMS_ERROR";
-export const ITEM_CREATED = "ITEM_CREATED";
-export const ITEMS_FETCHED = "ITEMS_FETCHED";
-export const ITEM_RETURNED = "ITEM_RETURNED";
-export const ITEM_UPDATED = "ITEM_UPDATED";
-export const ITEM_DELETED = "ITEM_DELETED";
+export const POSTS_LOADING = "POSTS_LOADING";
+export const POSTS_ERROR = "POSTS_ERROR";
+export const POST_CREATED = "POST_CREATED";
+export const POSTS_FETCHED = "POSTS_FETCHED";
+export const POST_RETURNED = "POST_RETURNED";
+export const POST_UPDATED = "POST_UPDATED";
+export const POST_DELETED = "POST_DELETED";
