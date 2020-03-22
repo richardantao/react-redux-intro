@@ -1,15 +1,15 @@
 # react-redux-boilerplate
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Using Redux with React can make managing state and props a whole lot easier, however, Redux boilerplate SUCKS. This project provides a React/Redux boilerplate for you to utilize in your own applications, and demonstrates integrating Redux with React using the example of a simple Todo List application.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Using Redux with React can make managing state and props a whole lot easier, however, setting up Redux boilerplate SUCKS. This project provides a React/Redux boilerplate on top of Create React App for you to utilize in your own applications, and demonstrates integrating Redux with React using the example of a simple Todo List application.
 
 ## Disclaimer
-Instead of sticking with a bare boilerplate, we decided to make this repository emulate a simple React-Redux Todo List app to take away the abstraction of working with React and Redux together. Hopefully seeing the entire app connected together applied to a real-life example makes the role of each component clear.
+Instead of sticking with a bare boilerplate, we decided to make this repository emulate a simple React-Redux Todo List app to take away the abstraction of working with React and Redux together. Hopefully seeing the entire app connected and applied to a real-life example makes the role of each component clear.
 
 This application is NOT functional because certain props would be required from a backend server, so in its current working verison, the app will throw an error because of undefined props.
 
 ## Dependencies
 - `axios` - promised based HTTP client for making HTTP requests
 - `bootstrap` - Bootstrap library
-- `react-helmet` - allows you to dynamically modify HTML head elements, such as <title></title> and <meta>
+- `react-helmet` - allows you to dynamically modify HTML head elements, such as title or meta tags
 - `react-redux` - lets you use React Redux with your React app
 - `react-router-dom` - a collection of navigational components that compose declaratively with your application
 - `reactstrap` - easy to use React Bootstrap 4 components compatible with React 16+
