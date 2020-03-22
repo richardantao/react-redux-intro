@@ -2,14 +2,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Disclaimer
-Instead of sticking with a bare boilerplate, I decided to make this repository emulates a simple React-Redux Todo List app to take away the abstraction of working with React and Redux together. Hopefully seeing the entire app connected together applied to a real-life example will aid in your understanding of the app.
+Instead of sticking with a bare boilerplate, we decided to make this repository emulate a simple React-Redux Todo List app to take away the abstraction of working with React and Redux together. Hopefully seeing the entire app connected together applied to a real-life example makes the role of each component clear.
 
 This application is NOT functional because certain props would be required from a backend server, so in its current working verison, the app will throw an error because of undefined props.
 
 ## Dependencies
 `axios` - promised based HTTP client for making HTTP requests
-`bootstrap` - the Bootstrap library
-`react-helmet` - allows you to dynamically modify HTMl head elements, such as <title></title> and <meta/>
+`bootstrap` - Bootstrap library
+`react-helmet` - allows you to dynamically modify HTML head elements, such as <title></title> and <meta>
 `react-redux` - lets you use React Redux with your React app
 `react-router-dom` - a collection of navigational components that compose declaratively with your application
 `reactstrap` - easy to use React Bootstrap 4 components compatible with React 16+
