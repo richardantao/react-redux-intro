@@ -1,20 +1,24 @@
 # react-redux-boilerplate
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Using Redux with React can make managing state and props a whole lot easier, however, setting up Redux boilerplate SUCKS. This project provides a React/Redux boilerplate on top of Create React App for you to utilize in your own applications, and demonstrates integrating Redux with React using the example of a simple Todo List application.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Using Redux with React can make managing state and props a whole lot easier, however, setting up Redux boilerplate SUCKS. This project provides a React/Redux boilerplate on top of Create React App for you to utilize in your own applications, and demonstrates integrating Redux with React using the example of a simple Posts List application.
 
 ## Disclaimer
-Instead of sticking with a bare boilerplate, we decided to make this repository emulate a simple React-Redux Todo List app to take away the abstraction of working with React and Redux together. Hopefully seeing the entire app connected and applied to a real-life example makes the role of each component clear.
-
-This application is NOT functional because certain props would be required from a backend server, so in its current working verison, the app will throw an error because of undefined props.
+Instead of sticking with a bare boilerplate, we decided to make this repository emulate a simple React-Redux Posts List app to take away the abstraction of working with React and Redux together. Hopefully seeing the entire app connected and applied to a real-life example makes the role of each component clear.
 
 ## Dependencies
 - `axios` - promised based HTTP client for making HTTP requests
 - `bootstrap` - Bootstrap library
+- `json-server` - provides a full fake REST API for updating props 
 - `react-helmet` - allows you to dynamically modify HTML head elements, such as title or meta tags
 - `react-redux` - lets you use React Redux with your React app
 - `react-router-dom` - a collection of navigational components that compose declaratively with your application
 - `reactstrap` - easy to use React Bootstrap 4 components compatible with React 16+
 - `redux` - a predictable state container for JavaScript apps
 - `redux-thunk` - middleware that allows you to write action creators that return a function instead of an action
+
+## Instructions after Cloning
+1. Remove json-server dependency and connect to your own API.
+2. Replace Posts data with your own; the action creators, reducers, and organism components need to be updated accordingly.
+3. axios and Bootstrap/reactstrap are optional dependencies. Feel free to replace axios with another HTTP client and Bootstrap with another CSS framework.
 
 ## Available Scripts
 
