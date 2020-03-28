@@ -44,9 +44,9 @@ export default (state = initialState, action) => {
                 ...state,
                 loading: false,
                 posts: state.posts.map(post => {
-                    const { _id } = action.payload;
+                    const { id } = action.payload;
 
-                    if(post._id !== _id) {
+                    if(post.id !== id) {
                         return post;
                     } else return {
                         post: action.payload
@@ -58,16 +58,16 @@ export default (state = initialState, action) => {
                 ...state,
                 loading: false,
                 posts: state.posts.map(post => {
-                    const { _id, name, description } = action.payload;
+                    const { id, title, author } = action.payload;
                     
-                    if(post._id !== _id) {
+                    if(post.id !== id) {
                         return post;
                     } else return {
                         ...state.posts,
                         post: {
-                            _id,
-                            name, 
-                            description
+                            id,
+                            title, 
+                            author
                         }
                     };
                 })
@@ -76,7 +76,7 @@ export default (state = initialState, action) => {
             return {
                 ...state,
                 loading: false,
-                posts: state.posts.filter(post => post._id !== action.payload)
+                posts: state.posts.filter(post => post.id !== action.payload)
             };
         default: 
             return state;
