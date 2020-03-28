@@ -1,8 +1,7 @@
 # react-redux-boilerplate
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Using Redux with React can make managing state and props a whole lot easier, however, setting up Redux boilerplate SUCKS. This project provides a React/Redux boilerplate on top of Create React App for you to utilize in your own applications, and demonstrates integrating Redux with React using the example of a simple Posts List application.
 
-## Disclaimer
-Instead of sticking with a bare boilerplate, we decided to make this repository emulate a simple React-Redux Posts List app to take away the abstraction of working with React and Redux together. Hopefully seeing the entire app connected and applied to a real-life example makes the role of each component clear.
+Instead of sticking with a bare boilerplate, we decided to make this repository emulate a simple React-Redux Posts List app to take away the abstraction of working with React and Redux together. Seeing the entire app connected and applied to a real-life example should make the role of each component more clear.
 
 ## Dependencies
 - `axios` - promised based HTTP client for making HTTP requests
