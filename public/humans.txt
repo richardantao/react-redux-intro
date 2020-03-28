@@ -1,0 +1,28 @@
+/* TEAM */
+
+Lead Author: Richard Antao                
+Site: https://richardantao.com    
+Github: https://github.com/richardantao
+Location: Toronto, Canada.
+
+                		[...]
+                        	
+/* THANKS */
+			
+Supporting Author: Jason Chin
+Site: https://jsonchin.com    
+Github: https://github.com/jrobchin
+Location: Seattle, US.
+
+                        [...]
+                        
+                            
+/* SITE */
+          
+Last update: 2020/03/30
+
+Standards: HTML5, CSS3,..
+        
+Components: Modernizr, jQuery, etc.
+                            
+Software: Software used for the development
